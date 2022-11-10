@@ -30,12 +30,11 @@ Ou bien d'autres outils que vous connaissez déjà :
 
 ### Authentification SSH
 
-- Voir https://help.github.com/articles/generating-an-ssh-key pour plus de détails sur l'authentification par rapport aux référentiels compatibles SSH
-- Ou exécutez `ssh-keygen` pour générer une paire de clés SSH dans `%USERPROFILE%/.ssh/` :
+- exécutez `ssh-keygen` pour générer une paire de clés SSH dans `%USERPROFILE%/.ssh/` :
 
   `ssh-keygen -t rsa -b 4096 -C "johndoe@example.com"`
 
   Cela génère des clés publiques/privées nommées `id_rsa.pub`/`id_rsa`, respectivement)
 - La clé publique `id_rsa.pub` doit être téléchargée sur votre serveur de dépôt :
   - Pour GitHub, c'est dans _Settings_ -> _SSH and GPG keys_
-  - Pour le serveur BitBucket, c'est dans _Gérer le compte_ -> _Clés SSH_
+- Voir https://help.github.com/articles/generating-an-ssh-key pour plus de détails sur l'authentification par rapport aux référentiels compatibles SSH
